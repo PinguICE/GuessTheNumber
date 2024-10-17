@@ -1,0 +1,233 @@
+@font-face {
+    font-family: 'Luckiest Guy';
+    src: url('fonts/LuckiestGuy-Regular.ttf') format('truetype');
+}
+
+body {
+    /* Img background */
+    background-image: url("img/wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.luckiest {
+    /* Configuration */
+    font-family: 'Luckiest Guy', sans-serif;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    color: #a0ffff;
+    stroke: black;
+
+    /* Background */
+    background: linear-gradient(
+        145deg, 
+        rgba(0, 94, 255, 0.4), 
+        rgba(100, 65, 255, 0.8)
+    );
+
+    /* Stroke */
+    text-shadow: 
+    -2px -2px 0px black,  
+     2px -2px 0px black,
+    -2px  2px 0px black,
+     2px  2px 0px black;
+}
+
+.box1 {
+    /* Size Box */
+    width: 500px;
+    height: 500px;
+
+    /* Border */
+    border: 30px solid; 
+    border-radius: 50px; /* Corregido aquí */
+    border-image: linear-gradient(
+       to bottom, 
+        rgba(0, 255, 255, 0.6), 
+        rgba(0, 0, 255, 0.6)
+    ) 30;
+    
+    /* Configuration of Box */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 45px;
+
+    /* Background decoration */
+    background: linear-gradient(
+        145deg, 
+        rgba(0, 255, 255, 0.8), 
+        rgba(0, 94, 255, 0.4)
+    );
+
+    background-color: rgba(179, 186, 255, 0.9);
+
+    /* Background Img Decoration*/
+    background: 
+        linear-gradient(145deg, rgba(0, 255, 255, 0.8), rgba(0, 94, 255, 0.4)),
+        url("img/light.png");
+        background-size: cover, 150px auto;
+        background-position: center;
+        background-blend-mode: overlay;
+        background-color: rgba(179, 186, 255, 0.99);
+}
+
+.box2 {
+    /* Size Box */
+    width: 300px;
+    height: 500px;
+
+    /* Border */
+    border: 30px solid; 
+    border-radius: 50px;
+    border-image: linear-gradient(
+       to bottom, 
+        rgba(0, 255, 255, 0.6), 
+        rgba(0, 0, 255, 0.6)
+    ) 30;
+    
+    /* Configuration of Box */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 45px;
+
+    /* Background decoration */
+    background: linear-gradient(
+        145deg, 
+        rgba(0, 255, 255, 0.8), 
+        rgba(0, 94, 255, 0.4)
+    ),
+
+    /* Background Img Decoration*/
+    url("img/PalmImg.png");
+    background-size: 190px auto;
+    background-position: center; 
+    background-blend-mode: overlay;
+    background-color: rgba(179, 186, 255, 0.99);
+}
+
+.box3 {
+    /* Size Box */
+    width: 300px;
+    height: 500px;
+
+    /* Border */
+    border: 30px solid; 
+    border-radius: 50px;
+    border-image: linear-gradient(
+       to bottom, 
+        rgba(0, 255, 255, 0.6), 
+        rgba(0, 0, 255, 0.6)
+    ) 30;
+    
+    /* Configuration of Box */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    border-radius: 45px;
+
+    /* Background decoration */
+    background: linear-gradient(
+        145deg, 
+        rgba(0, 255, 255, 0.8), 
+        rgba(0, 94, 255, 0.4)
+    ),
+
+    /* Background Img Decoration*/
+    url("img/PalmImg.png");
+    background-size: 190px auto;
+    background-position: center; 
+    background-blend-mode: overlay;
+    background-color: rgba(179, 186, 255, 0.99);
+}
+
+.box4 {
+    /* Size Box */
+    width: 300px;
+    height: 80px;
+
+    /* Border */
+    border: 10px solid; 
+    border-radius: 100px;
+
+    /* Configuration of Box */
+    display: flex; 
+    flex-direction: column;
+
+    align-items: center;
+    margin: 5px;
+
+    /* Background decoration */
+    background: 
+        linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(228, 228, 228, 0.9)),
+        rgba(255, 255, 255, 1);
+}
+
+/* Makes the boxes */
+.container {
+    display: flex; 
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Wizard Main Img Style */
+.ImgMainStyle {
+   width: 350px;
+   height: 500px;
+   padding: auto;
+}
+
+/* Wizard Main Img Style */
+.ImgLuckStyle {
+    width: 250px;
+    height: 200px;
+    padding: auto;
+ }
+
+/* Text Prompt Style */
+.TextPromptStyle{
+    font-family: 'Luckiest Guy', sans-serif;
+    color: gray;
+}
+
+
+
+/* JS STYLES */
+input[type="number"] {
+    width: 80%;
+    padding: 25px;
+    margin: 5px 0;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+button {
+    /* Configuration */
+    font-family: 'Luckiest Guy', sans-serif;
+    font-size: larger;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 30px;
+    background-color: #0044d8;
+    color: white;
+    cursor: pointer;
+
+    /* Stroke */
+    text-shadow: 
+    -2px -2px 0px black,  
+     2px -2px 0px black,
+    -2px  2px 0px black,
+     2px  2px 0px black;
+}
+
+button:hover {
+    background-color: #0136a7;
+    color: gray;
+}

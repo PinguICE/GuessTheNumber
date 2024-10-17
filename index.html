@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Guess The Name</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <img class="ImgMainStyle" src="img/MainWizard.png" alt="Wizard">
+            <p class="luckiest" id="feedback"></p>
+        </div>
+        
+        <div class="box2">
+            <h1 class="luckiest">Try to guess the number</h1>
+            <h1 class="luckiest">Between 0 and 100</h1>
+            <img class="ImgLuckStyle" src="img/GoodLuckImg.png" alt="GoodLuckImg">
+        </div>
+
+        <div class="box3">
+            <h1 class="luckiest"><i><u>Stats</u></i></h1>
+            <h1 class="luckiest">Attempts: <span id="attempts">0</span></h1>
+            <h1 class="luckiest">Guesses: <span id="guesses"></span></h1>
+            <h1 class="luckiest">Wins: <span id="wins">0</span></h1>
+            <h1 class="luckiest">Win Streak: <span id="winStreak">0</span></h1>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="box4">
+            <input class="TextPromptStyle" type="number" id="guessInput" placeholder="Enter your guess" min="0" max="100">
+        </div>
+        <button id="submitGuess">Submit Guess</button>
+    </div>
+</body>
+</html>
